@@ -11,7 +11,7 @@ use lib 'lib';
 use Plack::Middleware::DirListing;
 
 # 1. Setup Temp Directory and Files for Sorting
-my $temp_dir = path(Path::Tiny->tempdir);
+my $temp_dir = Path::Tiny->tempdir;
 
 # Create files named specifically to test alphabetical sorting
 $temp_dir->child('alpha.txt')->spew("content");

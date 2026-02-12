@@ -33,11 +33,3 @@ This modules does not attempt to find a default html file for the directory. If 
 # AUTHOR
 
 Keith Carangelo <kcaran@gmail.com>
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 35:
-
-    You forgot a '=back' before '=head1'

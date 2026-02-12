@@ -106,8 +106,6 @@ sub read_dir {
     push @files, [ $filetype_class, $url, $ent, $self->last_modified( $stat[9] ), $stat[7], $mime_type, $stat[9] ];
   }
 
-warn "KAC: @{ $files[1] }";
-
   my ($field, $order) = $env->{ QUERY_STRING } =~ /C=(\w);O=(\w)/;
   $field ||= 'N';
   $order ||= 'A';
@@ -186,6 +184,8 @@ This modules does not attempt to find a default html file for the directory. If 
 =item root
 
 Document root directory. Defaults to the current directory.
+
+=back
 
 =head1 AUTHOR
 
